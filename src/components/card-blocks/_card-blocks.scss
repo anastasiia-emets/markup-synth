@@ -47,7 +47,7 @@
     content: "";
     height: 18px;
     width: 18px;
-    left: 2px;
+    left: 4px;
     bottom: 3px;
     background-color: white;
     -webkit-transition: 0.4s;
@@ -64,14 +64,14 @@
 
 .card-blocks-wrapper {
   display: flex;
-  margin-top: 60px;
-  margin-left: 57px;
+  margin-top: 70px;
+  margin-left: 50px;
   flex-direction: column;
   margin-bottom: 246px;
 }
 .card-blocks {
   display: flex;
-  margin-top: 62px;
+  margin-top: 42px;
   flex-wrap: wrap;
 }
 .card-block {
@@ -85,6 +85,10 @@
   padding: 0px 21px 24px 27px;
   margin-right: 27px;
   margin-top: 24px;
+  display: flex;
+    display: -ms-flexbox;
+  flex-direction: column;
+  
   &__text {
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
@@ -95,6 +99,7 @@
   &__footer {
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
   }
   &__user {
     display: flex;
@@ -125,8 +130,6 @@
   }
   &__shared {
     font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    margin-top: 24px;
     margin-right: 4px;
     font-weight: 600;
     font-size: 16px;
@@ -150,22 +153,21 @@
       }
     }
   }
-  &__shared-with-icon {
-    margin-top: 24px;
-  }
+
   &__share-icon img {
     margin-right: 3px;
     cursor: pointer;
   }
   &__shared-link {
     display: inline-block;
-    margin-top: -5px;
     cursor: pointer;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
     color: #3e4056;
+    display: flex;
+    align-self: center;
     &:hover {
       color: grey;
       transition: color 0.5s ease;
@@ -177,23 +179,27 @@
   }
   &__play {
     margin-left: 8px;
-    display: inline-block;
-    margin-top: 5px;
+    display: flex;
+    align-self: center;
   }
   &__like {
     margin-left: 8px;
-    display: inline-block;
-    margin-top: 5px;
+    display: flex;
+    align-self: center;
   }
   &__like-img {
     margin-left: 16px;
   }
- 
-  
+  &__share-icon{
+    display: flex;
+    height: 29px;
+  }
 }
 
 .card-block_with-shared {
-  padding: 0px 21px 21px 21px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
   .card-block__text {
     padding-top: 8px;
   }

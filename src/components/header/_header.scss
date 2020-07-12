@@ -2,17 +2,17 @@
   box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.06);
 }
 .header {
-  max-width: 1200px;
+  max-width: 1215px;
   margin: 0 auto;
-  min-height: 112px;
-  padding-top: 24px;
+  min-height: 110px;
+  padding-top: 25px;
   &__user {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.5px;
     color: #3e3f58;
-    margin-right: 20px;
+    margin-right: 18px;
   }
   &__user-img {
     margin-right: 15px;
@@ -24,9 +24,11 @@
   &__icons {
     display: flex;
     cursor: pointer;
+    margin-top: -5px;
   }
   &__icon-arrow {
-    margin-right: 30px;
+    margin-right: 18px;
+    margin-bottom: 5px;
     cursor: pointer;
   }
   &-item2 {
@@ -41,11 +43,33 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding-right: 41px;
+  }
+  &__notifications-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+  }
+  &__share-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+  }
+  &__medium-icon:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
   }
   &__link {
     color: black;
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 37px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #3e4056;
   }
   &__links {
     margin-top: 10px;
@@ -54,17 +78,17 @@
   &__button {
     width: 64px;
     height: 64px;
-    left: 81%;
+    left: 89%;
     top: 80px;
     position: absolute;
+    cursor: pointer;
     border-radius: 50%;
     background: linear-gradient(135deg, #ff974f 0%, #e32c75 100%);
     &:hover {
-      opacity: 0.7;
-    
-        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+      transform: scale(1.1);
+      box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
       transition: all 0.3s ease;
-      }
+    }
   }
   &__button-img {
     width: 20px;
@@ -73,7 +97,6 @@
     justify-content: center;
     margin: 0 auto;
     margin-top: 21px;
-    cursor: pointer;
   }
 }
 a.header__link:after {
@@ -95,6 +118,6 @@ a.header__link:hover {
 }
 .main-wrapper {
   display: flex;
-  max-width: 1220px;
+  max-width: 1215px;
   margin: 0 auto;
 }

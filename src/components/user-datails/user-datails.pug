@@ -1,6 +1,7 @@
 .user-details
      .user-details-item1
-          img.user-details__img(src="images/avatar.svg" alt="avatar")
+          a.user-details__logo-link(href="#" target="_blank")
+               img.user-details__img(src="images/avatar.svg" alt="avatar")
           .user-details__info
                .user-details__name Benjamin Clementine
                a.user-details__nik @benclementine
@@ -13,12 +14,10 @@
                .user-details__dropdown-content#myDropdown
                     .user-details__dropdown-element
                          img.user-details__dropdown-img(src="images/icon_report.svg" alt="report")
-                         a.user-details__dropdown-link(href='#') Report User
+                         a.user-details__dropdown-link(href='#' target="_blank") Report User
                     .user-details__dropdown-element
                          img.user-details__dropdown-img(src="images/icon-block.svg" alt="icon-block")
-                         a.user-details__dropdown-link(href='#') Block User
-               
-          
+                         a.user-details__dropdown-link(href='#' target="_blank") Block User        
      .user-details-item2
           .user-details__followers
                .user-details__number 45

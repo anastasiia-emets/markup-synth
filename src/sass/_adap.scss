@@ -20,26 +20,55 @@
     margin-left: 0px;
     margin-bottom: 50px;
   }
+  .user-details__description {
+    width: 90%;
+  }
+  .wrapper-header {
+    padding: 0px 5%;
+  }
+  .main-wrapper {
+    padding: 0px 5%;
+  }
+  .card-blocks {
+    justify-content: space-between;
+  }
+  .card-blocks-wrapper {
+    margin-top: 20px;
+  }
+  .card-blocks {
+    margin-top: 20px;
+  }
 }
-
+@media (max-width: 900px) {
+  .card-blocks {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .card-block {
+    margin-right: 0px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .card-blocks-wrapper {
+    width: 100% !important;
+  }
+}
 @media (max-width: 521px) {
-.user-details-item1{
-  flex-wrap: wrap;
-}
-.user-details__menu{
-  width: 300px;
-  margin-top: 20px;
-  margin-left: 0px;
-}
-.user-details__dropdown-content.show{
-  margin-left: 50px;
-}
-.user-details__dropdown{
-  display: flex;
-}
-.user-details-item2{
-  margin-top: 0px;
-}
+  .user-details-item1 {
+    flex-wrap: wrap;
+  }
+
+  .user-details__dropdown-content.show {
+    margin-left: -100px;
+    margin-top: 30px;
+  }
+  .user-details__dropdown {
+    display: flex;
+  }
+  .user-details-item2 {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 410px) {
   .header-item {
@@ -50,5 +79,52 @@
   }
   .header__button {
     top: 110px;
+  }
+  .card-block {
+    width: 100%;
+  }
+  .user-details__img {
+    width: 80px;
+    margin-right: 12px;
+  }
+  .user-details__info {
+    max-width: 120px;
+  }
+  .header__user {
+    margin-right: 10px;
+  }
+  .header__icon-arrow {
+    margin-right: 10px;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .card-blocks-wrapper {
+    width: 90%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .card-block__play-img,
+  .card-block__like-img {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-self: center;
+  }
+  .header__icon-arrow {
+    margin-top: 10px;
+    height: 15px;
+  }
+  .user-details__dropdown-img {
+    width: 23px;
+    height: 21px;
+    display: flex;
+    align-self: center;
+  }
+  img{
+    border: 0px;
+  }
+  .header__link{
+    display: inline-block;
   }
 }
