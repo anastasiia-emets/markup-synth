@@ -1,2 +1,8 @@
 # markup-synth
-https://anastasiia-emets.github.io/markup-synth/dist/
+# [DEMO](https://anastasiia-emets.github.io/markup-synth/dist/)
+# technology
+Includes:
+- Gulp
+- Pug
+- Scss
+- JS
