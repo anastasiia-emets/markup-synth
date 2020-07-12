@@ -1,0 +1,12 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@import "../components/header/header";
+@import "../components/user-datails/user-datails";
+@import "../components/card-blocks/card-blocks";
+
+@import "adap";
+
